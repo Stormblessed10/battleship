@@ -4,69 +4,217 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
     <title>Weather App</title>
     <script src="main.js" defer></script>
 </head>
 <body>
-    <main class="main container">
-        <section class="data">
-            <p class="data__descr"></p>
-            <p class="data__location"></p>
-            <time class="data__date"></time>
-            <time class="data__time"></time>
-            <p class="data__temperature"></p>
-            <button class="" id="temperatureUnit"></button>
-            <div class="data__icon"></div>
-            <form class="search">
-                <input class="search__input" type="text">
-                <button class="search__submit"></button>
-            </form>
-        </section>
+    <header class="header">
+        <img src="" alt="" class="logo">
+        <form class="search">
+            <input class="search__input" type="text">
+            <button class="search__submit">Search</button>
+        </form>
 
-        <aside class="details">
+        <div class="theme">
+            <button class="theme__btn sun"><img src="sun.png" alt="ligth theme"></button>
+            <button class="theme__btn moon"><img src="moon.png" alt="dark theme"></button>
+            <div class="theme__ball"></div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="weather">
+            <h1 class="heading-primary">Weather</h1>
+            <div class="container">
+            <div>
+                <div class="weather__btn-container">
+                    <button class="weather__btn selected" id="temperatureUnitC">°C</button>
+                    <button class="weather__btn" id="temperatureUnitF">°F</button>
+                </div>
+                <p class="weather__location">Rome</p>
+                <p class="weather__descr">Clear Sky</p>
+                <p class="weather__temperature">56°C</p>
+                <time class="weather__date">1963-11-22</time>
+                <time class="weather__time">12:50</time>
+            </div>
+
+            <ul class="forecast-h">
+                <li class="forecast-h__item">
+                    <span class="forecast-h__hour">12</span>
+                    <span class="forecast-h__precent">12%</span>
+                    <img class="forecast-h__img" src="https://openweathermap.org/img/wn/10d@4x.png" alt="img">
+                    <span class="forecast-h__temperature">12°C</span>
+                </li>
+                <li class="forecast-h__item">
+                    <span class="forecast-h__hour">12</span>
+                    <span class="forecast-h__precent">12%</span>
+                    <img class="forecast-h__img" src="https://openweathermap.org/img/wn/10d@4x.png" alt="img">
+                    <span class="forecast-h__temperature">12°C</span>
+                </li>
+                <li class="forecast-h__item">
+                    <span class="forecast-h__hour">12</span>
+                    <span class="forecast-h__precent">12%</span>
+                    <img class="forecast-h__img" src="https://openweathermap.org/img/wn/10d@4x.png" alt="img">
+                    <span class="forecast-h__temperature">12°C</span>
+                </li>
+                <li class="forecast-h__item">
+                    <span class="forecast-h__hour">12</span>
+                    <span class="forecast-h__precent">12%</span>
+                    <img class="forecast-h__img" src="https://openweathermap.org/img/wn/10d@4x.png" alt="img">
+                    <span class="forecast-h__temperature">12°C</span>
+                </li>
+                <li class="forecast-h__item">
+                    <span class="forecast-h__hour">12</span>
+                    <span class="forecast-h__precent">12%</span>
+                    <img class="forecast-h__img" src="https://openweathermap.org/img/wn/10d@4x.png" alt="img">
+                    <span class="forecast-h__temperature">12°C</span>
+                </li>
+                <li class="forecast-h__item">
+                    <span class="forecast-h__hour">12</span>
+                    <span class="forecast-h__precent">12%</span>
+                    <img class="forecast-h__img" src="https://openweathermap.org/img/wn/10d@4x.png" alt="img">
+                    <span class="forecast-h__temperature">12°C</span>
+                </li>
+                <li class="forecast-h__item">
+                    <span class="forecast-h__hour">12</span>
+                    <span class="forecast-h__precent">12%</span>
+                    <img class="forecast-h__img" src="https://openweathermap.org/img/wn/10d@4x.png" alt="img">
+                    <span class="forecast-h__temperature">12°C</span>
+                </li>
+                <li class="forecast-h__item">
+                    <span class="forecast-h__hour">12</span>
+                    <span class="forecast-h__precent">12%</span>
+                    <img class="forecast-h__img" src="https://openweathermap.org/img/wn/10d@4x.png" alt="img">
+                    <span class="forecast-h__temperature">12°C</span>
+                </li>
+                <li class="forecast-h__item">
+                    <span class="forecast-h__hour">12</span>
+                    <span class="forecast-h__precent">12%</span>
+                    <img class="forecast-h__img" src="https://openweathermap.org/img/wn/10d@4x.png" alt="img">
+                    <span class="forecast-h__temperature">12°C</span>
+                </li>
+                <li class="forecast-h__item">
+                    <span class="forecast-h__hour">12</span>
+                    <span class="forecast-h__precent">12%</span>
+                    <img class="forecast-h__img" src="https://openweathermap.org/img/wn/10d@4x.png" alt="img">
+                    <span class="forecast-h__temperature">12°C</span>
+                </li>
+                <li class="forecast-h__item">
+                    <span class="forecast-h__hour">12</span>
+                    <span class="forecast-h__precent">12%</span>
+                    <img class="forecast-h__img" src="https://openweathermap.org/img/wn/10d@4x.png" alt="img">
+                    <span class="forecast-h__temperature">12°C</span>
+                </li>
+                <li class="forecast-h__item">
+                    <span class="forecast-h__hour">12</span>
+                    <span class="forecast-h__precent">12%</span>
+                    <img class="forecast-h__img" src="https://openweathermap.org/img/wn/10d@4x.png" alt="img">
+                    <span class="forecast-h__temperature">12°C</span>
+                </li>
+                <li class="forecast-h__item">
+                    <span class="forecast-h__hour">12</span>
+                    <span class="forecast-h__precent">12%</span>
+                    <img class="forecast-h__img" src="https://openweathermap.org/img/wn/10d@4x.png" alt="img">
+                    <span class="forecast-h__temperature">12°C</span>
+                </li>
+                <li class="forecast-h__item">
+                    <span class="forecast-h__hour">12</span>
+                    <span class="forecast-h__precent">12%</span>
+                    <img class="forecast-h__img" src="https://openweathermap.org/img/wn/10d@4x.png" alt="img">
+                    <span class="forecast-h__temperature">12°C</span>
+                </li>
+                <li class="forecast-h__item">
+                    <span class="forecast-h__hour">12</span>
+                    <span class="forecast-h__precent">12%</span>
+                    <img class="forecast-h__img" src="https://openweathermap.org/img/wn/10d@4x.png" alt="img">
+                    <span class="forecast-h__temperature">12°C</span>
+                </li>
+            </ul>
+        </div>
+        </section>
+        <section class="details">
+            <div class="container">
+                <h2 class="heading-secondary">Details</h2>
             <ul class="details__list">
                 <li class="details__item">
-                    <div class="details__icon"></div>
-                    <div class="details__text">
-                        <p class="details__heading"></p>
-                        <p class="details__data"></p>
-                    </div>
+                    <h3 class="heading-tertiary">SUNRISE</h3>
+                    <span class="details__info">Hell</span>
                 </li>
                 <li class="details__item">
-                    <div class="details__icon"></div>
-                    <div class="details__text">
-                        <p class="details__heading"></p>
-                        <p class="details__data"></p>
-                    </div>
+                    <h3 class="heading-tertiary">SUNSET</h3>
+                    <span class="details__info">Hell</span>
                 </li>
                 <li class="details__item">
-                    <div class="details__icon"></div>
-                    <div class="details__text">
-                        <p class="details__heading"></p>
-                        <p class="details__data"></p>
-                    </div>
+                    <h3 class="heading-tertiary">CHANCE OF RAIN</h3>
+                    <span class="details__info">Hell</span>
                 </li>
                 <li class="details__item">
-                    <div class="details__icon"></div>
-                    <div class="details__text">
-                        <p class="details__heading"></p>
-                        <p class="details__data"></p>
-                    </div>
+                    <h3 class="heading-tertiary">HUMIDITY</h3>
+                    <span class="details__info">Hell</span>
+                </li>
+                <li class="details__item">
+                    <h3 class="heading-tertiary">WIND</h3>
+                    <span class="details__info">Hell</span>
+                </li>
+                <li class="details__item">
+                    <h3 class="heading-tertiary">FEELS LIKE</h3>
+                    <span class="details__info">Hell</span>
+                </li>
+                <li class="details__item">
+                    <h3 class="heading-tertiary">PRECIPITATION</h3>
+                    <span class="details__info">Hell</span>
+                </li>
+                <li class="details__item">
+                    <h3 class="heading-tertiary">PRESSURE</h3>
+                    <span class="details__info">Hell</span>
+                </li>
+                <li class="details__item">
+                    <h3 class="heading-tertiary">VISIBILITY</h3>
+                    <span class="details__info">Hell</span>
+                </li>
+                <li class="details__item">
+                    <h3 class="heading-tertiary">UV INDEX</h3>
+                    <span class="details__info">Hell</span>
                 </li>
             </ul>
-        </aside>
+        </div>
+        </section>
         
-        <section class="forecast">
-            <div class="forecast__buttons">
-                <button class="forecast__button"></button>
-                <button class="forecast__button"></button>
+        <section class="forecast-d">
+            <div class="container">
+                <h2 class="heading-secondary">Forecast</h2>
+                <ul class="forecast-d__list">
+                    <li class="forecast-d__item-headings">
+                        <p class="heading-tertiary">Day</p>
+                        <div></div>
+                        <p class="heading-tertiary">CHANCE OF RAIN</p>
+                        <p class="heading-tertiary">HUMIDITY</p>
+                        <p class="heading-tertiary">TEMPERATURE</p>
+                    </li>
+                    <li class="forecast-d__item">
+                        <p class="forecast-d__info">Day</p>
+                        <img src="sun.png" alt="">
+                        <p class="forecast-d__info">CHANCE OF RAIN</p>
+                        <p class="forecast-d__info">HUMIDITY</p>
+                        <p class="forecast-d__info">TEMPERATURE</p>
+                    </li>
+                    <li class="forecast-d__item">
+                        <p class="forecast-d__info">Day</p>
+                        <img src="sun.png" alt="">
+                        <p class="forecast-d__info">CHANCE OF RAIN</p>
+                        <p class="forecast-d__info">HUMIDITY</p>
+                        <p class="forecast-d__info">TEMPERATURE</p>
+                    </li>
+                    <li class="forecast-d__item">
+                        <p class="forecast-d__info">Day</p>
+                        <img src="sun.png" alt="">
+                        <p class="forecast-d__info">CHANCE OF RAIN</p>
+                        <p class="forecast-d__info">HUMIDITY</p>
+                        <p class="forecast-d__info">TEMPERATURE</p>
+                    </li>
+                </ul>
             </div>
-            <ul class="forecast__list">
-                <p class="forecast__day"></p>
-                <p class="forecast__temperature"></p>
-                <div class="forecast__icon"></div>
-            </ul>
         </section>
     </main>
 </body>

@@ -1,8 +1,51 @@
+* {
+    box-sizing: border-box;
+    list-style-type: none;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;    
+}
+
 html {
     font-size: 62.5%;
 }
 
 body {
     font-size: 1.6rem;
+    color: var(--color-primary);
+    background-color: var(--color-tertiary);
+    transition: all 1s;
 }
 
+.container {
+    max-width: 135rem;
+    margin: 0 auto;
+}
+
+// dynamic styles 
+
+//  buttons
+
+button {
+    cursor: pointer;
+}
+
+// HEADINGS
+
+.heading-primary, .heading-secondary, .heading-tertiary {
+    text-transform: uppercase;
+}
+
+.heading-primary {
+    font-size: 4.8rem;
+}
+
+.heading-secondary {
+    font-size: 4rem;
+}
+
+.heading-tertiary {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--color-primary-opacity);
+}

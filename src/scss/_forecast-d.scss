@@ -1,0 +1,39 @@
+.forecast-d {
+    margin: var(--margin-lg) 0;
+    text-align: center;
+
+    .container {
+
+    }
+
+    &__list {
+        margin-top: var(--margin-lg);
+        padding: 0 calc(var(--margin-xl));
+    }
+    
+    &__item-headings, &__item {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        align-items: center;
+        
+        :first-child {
+            justify-self: start;
+        }
+        
+        :last-child {
+            justify-self: end;
+        }
+    }
+    &__item-headings {
+        margin-bottom: var(--margin-sm);
+
+    }
+    
+    &__item {
+        border-top: 1px solid var(--color-primary);
+    }
+
+    &__info {
+        font-size: 1.8rem;
+    }
+}

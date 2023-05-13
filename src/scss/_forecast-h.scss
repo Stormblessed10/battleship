@@ -1,0 +1,17 @@
+.forecast-h {
+    display: flex;
+    gap: var(--margin-lg);
+    overflow-x: scroll;
+    padding: var(--margin-md) 0;
+    border-top: 1px solid var(--color-primary);
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__img {
+        height: 7.4rem;
+        width: 7.4rem;
+    }
+}

@@ -1,0 +1,60 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-primary);
+    padding: var(--margin-md);
+
+    .theme {
+        display: flex;
+        border-radius: calc(3 * var(--base-radius));
+        overflow: hidden;
+        position: relative;
+        border: 2px solid var(--color-secondary);
+
+        &__btn {
+            border: none;
+            padding: calc(0.5 * var(--margin-sm)) var(--margin-sm);
+            line-height: 1;
+            
+            img {
+                height: 2.6rem;
+                width: 2.6rem;
+            }
+        }
+
+        &__ball {
+            height: 2.6rem;
+            width: 2.6rem;
+            border-radius: 50%;
+            background-color: var(--color-secondary);
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            transform: translate(5.5rem, -50%);
+            transition: transform 1s;
+        }
+    }
+}
+
+.search {
+    display: flex;
+    border-radius: var(--base-radius);
+    overflow: hidden;
+
+    &__input {
+        width: 30vw;
+        padding: 0.6rem 1.2rem;
+        border: none;
+        font-size: 1.6rem;
+        color: var(--color-primary);
+        background-color: var(--color-tertiary);
+    }
+
+    &__submit {
+        font-size: 1.8rem;
+        border: none;
+        padding: 0.6rem 1.2rem;
+        background-color: var(--color-secondary);
+        color: #fff;
+    }
+}

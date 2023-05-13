@@ -1,0 +1,18 @@
+:root {
+    --color-primary: #343a40;
+    --color-secondary: #eb6f4c;
+    --color-tertiary: #f8f9fa;
+    --color-primary-opacity: #84888b;
+    --margin-sm: 1rem;
+    --margin-md: 2rem;
+    --margin-lg: 4rem;
+    --margin-xl: 10rem;
+    --base-radius: 8px;
+
+    .theme-dark {
+        --color-primary: #f8f9fa;
+        --color-secondary: #eb6f4c;
+        --color-tertiary: #343a40;
+        --color-primary-opacity: #84888b;
+    }
+}

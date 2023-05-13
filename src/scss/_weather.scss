@@ -1,0 +1,70 @@
+.weather {
+    text-align: center;
+    margin: var(--margin-lg) 0;
+
+    .container {
+        display: flex;
+        gap: var(--margin-xl);
+        align-items: center;
+
+        padding-left: var(--margin-xl);
+        padding-right: var(--margin-lg);
+    }
+    
+    &__btn-container {
+        display: flex;
+        justify-content: center;
+        margin-top: var(--margin-lg);
+        overflow: hidden;
+        
+        :first-child {
+            border-left: 2px solid var(--color-secondary);
+            border-top-left-radius: calc(3 * var(--base-radius));
+            transition: all 1s;
+            
+        }
+
+        :last-child {
+            border-right: 2px solid var(--color-secondary);
+            border-top-right-radius: calc(3 * var(--base-radius));
+            transition: all 1s;
+        }
+    }
+    
+    &__btn {
+        border: none;
+        border-top: 2px solid var(--color-secondary);
+        border-bottom: 2px solid var(--color-secondary);
+        // border-top: 2px solid var(--color-secondary);
+        padding: calc(0.2 * var(--margin-md)) var(--margin-md);
+        background-color: var(--color-tertiary);
+        color: var(--color-primary);
+    }
+
+    &__location {
+        font-size: 3.2rem;
+        margin-top: var(--margin-md);
+    }
+
+    &__descr {
+        font-size: 2.4rem;
+    }
+
+    &__temperature {
+        font-size: 10rem;
+    }
+
+    &__date {
+        display: block;
+        font-weight: 600;
+    }   
+
+    &__time {
+        font-weight: 600;
+    }
+    
+    .selected {
+        background-color: var(--color-primary);
+        color: var(--color-tertiary);
+    }
+}

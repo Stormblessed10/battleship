@@ -1,1 +1,7 @@
-@use "global.scss" 
+@use "variables.scss";
+@use "global.scss";
+@use "header.scss";
+@use "weather.scss";
+@use "forecast-h.scss";
+@use "details.scss";
+@use "forecast-d.scss";
