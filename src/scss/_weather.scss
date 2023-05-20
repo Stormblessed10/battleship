@@ -18,14 +18,14 @@
         overflow: hidden;
         
         :first-child {
-            border-left: 2px solid var(--color-secondary);
+            border-left: 2px solid var(--color-primary);
             border-top-left-radius: calc(3 * var(--base-radius));
             transition: all 1s;
             
         }
 
         :last-child {
-            border-right: 2px solid var(--color-secondary);
+            border-right: 2px solid var(--color-primary);
             border-top-right-radius: calc(3 * var(--base-radius));
             transition: all 1s;
         }
@@ -33,9 +33,8 @@
     
     &__btn {
         border: none;
-        border-top: 2px solid var(--color-secondary);
-        border-bottom: 2px solid var(--color-secondary);
-        // border-top: 2px solid var(--color-secondary);
+        border-top: 2px solid var(--color-primary);
+        border-bottom: 2px solid var(--color-primary);
         padding: calc(0.2 * var(--margin-md)) var(--margin-md);
         background-color: var(--color-tertiary);
         color: var(--color-primary);
@@ -52,6 +51,7 @@
 
     &__temperature {
         font-size: 10rem;
+        max-width: 20rem
     }
 
     &__date {
@@ -64,7 +64,7 @@
     }
     
     .selected {
-        background-color: var(--color-primary);
+        background-color: var(--color-secondary);
         color: var(--color-tertiary);
     }
 }

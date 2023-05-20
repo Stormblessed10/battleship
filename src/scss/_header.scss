@@ -1,8 +1,17 @@
 .header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: var(--color-primary);
-    padding: var(--margin-md);
+    padding: var(--margin-sm) var(--margin-lg);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    .logo img {
+        width: 6rem;
+        height: 6rem;
+    }
 
     .theme {
         display: flex;
@@ -10,9 +19,11 @@
         overflow: hidden;
         position: relative;
         border: 2px solid var(--color-secondary);
+        height: 4rem;
 
         &__btn {
             border: none;
+            background-color: var(--color-tertiary);
             padding: calc(0.5 * var(--margin-sm)) var(--margin-sm);
             line-height: 1;
             
@@ -40,6 +51,7 @@
     display: flex;
     border-radius: var(--base-radius);
     overflow: hidden;
+    height: 4rem;
 
     &__input {
         width: 30vw;
@@ -48,6 +60,11 @@
         font-size: 1.6rem;
         color: var(--color-primary);
         background-color: var(--color-tertiary);
+    }
+
+    &__input::placeholder {
+        color: var(--color-primary);
+        opacity: 0.5;
     }
 
     &__submit {

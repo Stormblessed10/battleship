@@ -14,7 +14,7 @@ body {
     font-size: 1.6rem;
     color: var(--color-primary);
     background-color: var(--color-tertiary);
-    transition: all 1s;
+    transition: color 1s, background-color 1s;
 }
 
 .container {
@@ -22,12 +22,31 @@ body {
     margin: 0 auto;
 }
 
-// dynamic styles 
+.main {
+    opacity: 0;
+}
+
+.loader {
+    margin: var(--margin-xl) auto;
+    border-radius: 50%;
+    border: 4px dashed var(--color-primary);
+    height: 6rem;
+    width: 6rem;
+    animation: 2s infinite spin;
+}
+
+.error {
+    margin: var(--margin-xl) 0;
+    text-align: center;
+    font-size: 5rem;
+    color: var(--color-secondary);
+}
 
 //  buttons
 
 button {
     cursor: pointer;
+    outline: none;
 }
 
 // HEADINGS
@@ -48,4 +67,15 @@ button {
     font-size: 1.6rem;
     font-weight: 400;
     color: var(--color-primary-opacity);
+}
+
+// KEYFRAMES
+
+@keyframes spin {
+    from {
+        transform: rotate(0);
+    } 
+    to {
+        transform: rotate(360deg);
+    }
 }

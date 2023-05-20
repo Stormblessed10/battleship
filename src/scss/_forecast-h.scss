@@ -1,17 +1,20 @@
 .forecast-h {
     display: flex;
     gap: var(--margin-lg);
-    overflow-x: scroll;
+    
     padding: var(--margin-md) 0;
     border-top: 1px solid var(--color-primary);
-
+    overflow-x: scroll;
+    
     &__item {
         display: flex;
         flex-direction: column;
-    }
 
-    &__img {
-        height: 7.4rem;
-        width: 7.4rem;
+        transition: all 1s;
+        font-weight: 500;
+
+        & > *:not(:first-child) {
+            margin-top: var(--margin-sm);
+        }
     }
 }

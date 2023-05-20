@@ -1,10 +1,7 @@
 .forecast-d {
     margin: var(--margin-lg) 0;
     text-align: center;
-
-    .container {
-
-    }
+    font-weight: 700;
 
     &__list {
         margin-top: var(--margin-lg);
@@ -18,12 +15,19 @@
         
         :first-child {
             justify-self: start;
+            padding: 0 var(--margin-sm);
         }
         
         :last-child {
             justify-self: end;
+            padding: 0 var(--margin-sm);
         }
     }
+
+    &__img .img {
+        padding: 0;
+    }
+    
     &__item-headings {
         margin-bottom: var(--margin-sm);
 
@@ -31,6 +35,10 @@
     
     &__item {
         border-top: 1px solid var(--color-primary);
+
+        div {
+            text-align: left;
+        }
     }
 
     &__info {
