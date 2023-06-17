@@ -4,10 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" href="https://clipart-library.com/images_k/battleship-silhouette/battleship-silhouette-8.png" type="image/x-icon">
+    <title>Battleship</title>
     <script src="main.js" defer></script>
 </head>
 <body>
-    
+    <header class="header">
+        <h1 class="heading">BATTLESHIP</h1>
+        <audio src="./audio/Soundtrack.mp3"></audio>
+        <button class="mute">
+            <svg enable-background="new 0 0 50 50" height="50px" id="Layer_1" version="1.1" viewBox="0 0 50 50" width="50px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><line fill="none" stroke="#000000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" x1="32" x2="42" y1="20" y2="30"/><line fill="none" stroke="#000000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" x1="42" x2="32" y1="20" y2="30"/><rect fill="none" height="50" width="50"/><rect fill="none" height="50" width="50"/><path d="M10,33H3  c-1.103,0-2-0.898-2-2V19c0-1.102,0.897-2,2-2h7" fill="none" stroke="#000000" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2.08"/><path d="M9.604,32.43  C9.256,32.129,9,31.391,9,30.754V19.247c0-0.637,0.256-1.388,0.604-1.689L22.274,4.926C23.905,3.27,26,3.898,26,6.327v36.988  c0,2.614-1.896,3.604-3.785,1.686L9.604,32.43z" fill="none" stroke="#000000" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.9797"/></svg>
+        </button>
+    </header>
+    <p class="text">First player type:</p>
+    <div class="container">
+        <dib class="btns">
+            <button class="select">AI</button>
+            <button class="select">HUMAN</button>
+        </dib class="btns">
+    </div>
+    <div class="ships"></div>
 </body>
 </html>

@@ -3,7 +3,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 let mode = process.env.NODE_ENV === "production"? "production" : "development";
 module.exports = {
 
-  entry: "./src/js/controller.js",
+  entry: "./src/js/game.js",
 
   mode: mode,
 
